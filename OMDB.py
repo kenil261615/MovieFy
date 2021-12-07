@@ -3,7 +3,7 @@ import requests
 
 def get_movie_info(movieTitle):
     url = 'http://www.omdbapi.com'
-    api_key = os.getenv('APIKEY')
+    api_key = os.getenv('36687e90')
     data = {'apikey':api_key,'t':movieTitle}
     response = requests.get(url,data).json()
 
