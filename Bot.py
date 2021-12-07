@@ -5,7 +5,7 @@ from OMDB import get_movie_info
 
 
 def start(bot,update):
-    bot.send_message(chat_id = update.message.chat_id , text = "Welcome to MovieFy... \n Enter the movie name to get its rating..!!!! ")
+    bot.send_message(chat_id = update.message.chat_id , text = "Welcome to RKPlex... \n Enter the movie name to get its rating..!!!! ")
 
 
 def ratings(bot,update):
@@ -33,7 +33,7 @@ def ratings(bot,update):
 
 
 if __name__ == "__main__":
-    token = os.getenv('TOKEN')
+    token = os.getenv('5044795332:AAGzM3BKuTP8Ir-F1kmLClPam-iwbpdeyPo')
     updater = Updater(token)
     dispatcher = updater.dispatcher
     bot = telegram.Bot(token)
