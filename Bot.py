@@ -32,7 +32,7 @@ def ratings(bot,update):
     bot.send_message(chat_id = update.message.chat_id, text = message_text)
 
 
-if __name__ == "__init__.py":
+if __name__ == "__init__":
     token = os.getenv('5044795332:AAGzM3BKuTP8Ir-F1kmLClPam-iwbpdeyPo')
     updater = Updater(token)
     dispatcher = updater.dispatcher
