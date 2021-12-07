@@ -36,7 +36,7 @@ if __name__ == "__main__":
     token = os.getenv('5044795332:AAGzM3BKuTP8Ir-F1kmLClPam-iwbpdeyPo')
     updater = Updater(token)
     dispatcher = updater.dispatcher
-    bot = telegram.Bot('5044795332:AAGzM3BKuTP8Ir-F1kmLClPam-iwbpdeyPo')
+    bot = telegram.Bot(token)
 
     start_handler = CommandHandler("start", start)
     ratings_handler = MessageHandler(Filters.text, ratings)
